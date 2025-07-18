@@ -41,7 +41,7 @@ class Solution {
             node=par[node];
         }
         path.push_back(1);
-        path.push_back(result[n]);
+        path.push_back(result[n]);//q has been changed a bit here it will firstg check the weight of node which can be fetched from result[n] so add that...
         reverse(begin(path),end(path));
         return path;
         
